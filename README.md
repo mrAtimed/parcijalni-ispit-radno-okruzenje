@@ -32,9 +32,8 @@ $ sudo mysql_secure_installation
 ```console
 $ sudo vim /etc/apache2/sites-available/000-default.conf
 
->	DocumentRoot /var/www/html/ParcijalniIspit
-
-> :wq
+	> DocumentRoot /var/www/html/ParcijalniIspit
+	> :wq
 ```
 ## 5. Inicijalizirati repozitorij
 ```console
@@ -59,7 +58,37 @@ $ git branch -M main
 
 $ git add README.md
 
-git commit -m "..."
+$ git commit -m "..."
 
 $ git push -u origin main
+```
+
+## 7. Instalirate composer paket po zelji
+```console
+$ sudo composer require symfony/serializer
+
+$ git add .
+```
+
+## 8. Kreirajte *.gitignore* i dodajte mapu *./vendor*
+```console
+$ sudo touch .gitignore
+
+$ vim .gitignore
+
+	> i
+	> /vendor
+	> esc
+	> :sq
+
+```
+
+## 9. Inicijalni "commit" i push
+
+```console
+$ git add .
+
+$ git commit -m "inicijalni commit"
+
+$ git push -u origin master
 ```
