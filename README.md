@@ -92,3 +92,12 @@ $ git commit -m "inicijalni commit"
 
 $ git push -u origin master
 ```
+## 0. Ispravak
+```console
+
+$ git rm -r --cached vendor
+
+$ git commit -m "ispravak"
+
+$ git push
+```
